@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Montserrat:wght@100&display=swap');
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+::-webkit-scrollbar{
+    width: 0.21vw;
+    height: 0.2vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff0000ad;
+}
+#nav{
+    position: fixed;
+    width:98vw;
+    background-color: black;
+    height: 10vh;
+    top: -1vw;
+    padding-bottom: 2vw;
+}
+
+#fav{
+    width: 4vw;
+ margin-left: 1vw;
+margin-top: 1.5vw;
+}
+a{
+    color: white;
+text-decoration: none;
+
+
+}
+#a{margin-right: 2vw;
+    margin-top: 2.5vw;
+    display: inline-block;
+    position: relative;
+}
+#elements{
+   float: right;
+   font-family: 'Megrim', cursive;
+   font-size: 1.5vw;
+   
+}
+#elements  a::after{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ff0000ad;
+  width: 0%;
+  content: "";
+  height: 0.1vw;
+  transition: all 0.5s;
+}
+#elements  a:hover::after{
+    /* ul li ::after when hover */
+    width:100%;
+}
+
+
+#i1{
+    width: 85vw;
+    /* margin-top: -2vw; */
+    margin-left: 7vw;
+    /* height: 100vh; */
+   
+}
+
+#text{
+    margin-top: -32vw;
+    margin-left: 7vw;
+}
+#t1{
+    width: 25vw;
+    font-size: 1vw;
+ 
+}
+#ts1{
+    font-size: 5vw;
+    margin-bottom: 1vh;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-weight:100;
+}
+
+#container{
+margin-top: 20vw;
+margin-left: 5vw;
+}
+#r1>img{
+margin: 1vw;
+    height: 20vw;
+}
+#r2>img{
+    height: 15vw;
+  margin-right: 1vw;
+}
+#r2{
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+#container>div>h1{
+    font-family: 'Megrim', cursive;
+    font-weight: 100;
+    margin-left: 3.5vw;
+    
+}
+.intro>p{
+    
+    font-size: 1.5vw;
+    font-family: 'Josefin Slab', serif;
+    margin-left: 3.5vw;
+    width: 85%;
+}
+hr{
+    margin-left: 3.5vw;
+    background-color: rgb(255, 0, 0);
+    border: none;
+  width: 55%;
+  height: 1px;
+  margin-top: -1vh;
+}
+button{
+border: none;
+    background-color: rgba(255, 0, 0, 0.584);
+color: white;
+width: 8vw;
+height: 6vh;
+border-radius: 0.25vw;
+font-size: 0.7vw;
+
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.album{
+  padding-bottom: 2vw;
+    overflow-x: scroll;
+    display: flex;
+   
+}
+
+.cover{
+    scroll-behavior: smooth;
+    width: 15vw;
+    
+  /* float: left; */
+  margin-right: 3vw;
+
+  scroll-snap-type: x mandatory;
+}
+.cover>img{
+    width: 15vw;
+  
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+footer{
+    background-color: rgba(255, 0, 0, 0.866);
+    height: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+  justify-content: center;
+  padding-top: 2.5vw;
+}
