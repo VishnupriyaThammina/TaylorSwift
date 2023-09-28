@@ -68,10 +68,10 @@ text-decoration: none;
 
 
 #i1{
-    width: 100vw;
+    width: 100%;
     /* margin-top: -2vw; */
     /* margin-left: 7vw; */
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: left;
     /* height: 100vh; */
