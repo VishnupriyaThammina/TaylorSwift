@@ -19,7 +19,7 @@ body{
     background-color: black;
     height: 10vh;
     top: -1vw;
-    padding-bottom: 2vw;
+    /* padding-bottom: 2vw; */
 }
 
 #fav{
@@ -32,6 +32,11 @@ a{
 text-decoration: none;
 
 
+}
+
+.taytay{
+    height: 100%;
+    margin-bottom: 30vh;
 }
 #a{margin-right: 2vw;
     margin-top: 2.5vw;
@@ -63,9 +68,12 @@ text-decoration: none;
 
 
 #i1{
-    width: 85vw;
+    width: 100vw;
     /* margin-top: -2vw; */
-    margin-left: 7vw;
+    /* margin-left: 7vw; */
+    height: 100vh;
+    background-size: cover;
+    background-position: left;
     /* height: 100vh; */
    
 }
@@ -87,33 +95,28 @@ text-decoration: none;
 }
 
 #container{
-margin-top: 20vw;
-margin-left: 5vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-#r1>img{
-margin: 1vw;
-    height: 20vw;
-}
-#r2>img{
-    height: 15vw;
-  margin-right: 1vw;
-}
-#r2{
-    margin-left: 2vw;
-    margin-bottom: 2vw;
+
+#container>div{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+
 }
 #container>div>h1{
     font-family: 'Megrim', cursive;
     font-weight: 100;
-    margin-left: 3.5vw;
     
 }
 .intro>p{
-    
+    flex-wrap: wrap;
     font-size: 1.5vw;
     font-family: 'Josefin Slab', serif;
-    margin-left: 3.5vw;
-    width: 85%;
 }
 hr{
     margin-left: 3.5vw;
@@ -149,7 +152,8 @@ font-size: 0.7vw;
 
 .cover{
     scroll-behavior: smooth;
-    width: 15vw;
+    width: 50vw;
+
     
   /* float: left; */
   margin-right: 3vw;
@@ -157,7 +161,8 @@ font-size: 0.7vw;
   scroll-snap-type: x mandatory;
 }
 .cover>img{
-    width: 15vw;
+    width: 50vw;
+
   
 }
 
@@ -175,4 +180,43 @@ footer{
     display: flex;
   justify-content: center;
   padding-top: 2.5vw;
+}
+
+.r1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.r1>img{
+    margin: 10px;
+    height: 20vh;
+   
+}
+.r2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.r2>img{
+    margin: 10px;
+
+    height: 20vh;
+
+}
+
+@media screen and (max-width:700px){
+   .taytay{
+    margin-bottom: 5vh;
+   }
+   #t1{
+    font-size: 2vw;
+
+   }
+   .intro>p{
+    font-size: 4vw;
+   }
 }
